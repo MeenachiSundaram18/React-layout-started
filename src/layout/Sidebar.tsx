@@ -11,7 +11,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children, ...rest }) => {
   return (
     <Box
       sx={{
-        backgroundColor: "white",
+        backgroundColor: theme.palette.secondary.main,
       }}
       {...rest}
     >

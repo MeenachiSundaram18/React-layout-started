@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <Box display="flex" flexDirection="column" minHeight="100vh">
       <CssBaseline />
-      <HeaderPane sx={{ backgroundColor: theme.palette.background.default }}>
+      <HeaderPane>
         <Toolbar>
           <Typography
             variant="h6"
@@ -48,27 +48,16 @@ const Home = () => {
       </HeaderPane>
       <Box display="flex" flex="1">
         {/* left sidebar */}
-        <Sidebar
-          display="flex"
-          width="20vw"
-          sx={{ backgroundColor: theme.palette.secondary.main }}
-        >
+        <Sidebar display="flex" width="20vw">
           sidebar
         </Sidebar>
         <ContentPane>content pane</ContentPane>
         {/* Right sidebar */}
-        <Sidebar
-          display="flex"
-          width="20vw"
-          sx={{ backgroundColor: theme.palette.secondary.main }}
-        >
+        <Sidebar display="flex" width="20vw">
           sidebar
         </Sidebar>
       </Box>
-      <FooterPane
-        textAlign={"center"}
-        sx={{ backgroundColor: theme.palette.background.default }}
-      >
+      <FooterPane textAlign={"center"}>
         <Typography variant="body2" color={theme.palette.text.primary}>
           footer
         </Typography>

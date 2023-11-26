@@ -13,8 +13,8 @@ const FooterPane: React.FC<FooterPaneProps> = ({ children, ...rest }) => {
       bottom={0}
       sx={{
         width: "100%",
-        backgroundColor: "white",
-        color: "white",
+        backgroundColor: theme.palette.primary.main,
+        color: theme.palette.text.primary,
         borderTop: `1px solid black`,
       }}
       {...rest}

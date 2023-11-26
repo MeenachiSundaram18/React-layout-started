@@ -13,8 +13,8 @@ const HeaderPane: React.FC<HeaderPaneProps> = ({ children, ...rest }) => {
       elevation={0}
       sx={{
         width: "100%",
-        backgroundColor: "white",
-        color: "black",
+        backgroundColor: theme.palette.primary.main,
+        color: theme.palette.text.primary,
         borderBottom: `1px solid grey`,
       }}
       {...rest}

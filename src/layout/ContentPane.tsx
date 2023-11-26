@@ -12,7 +12,7 @@ const ContentPane: React.FC<ContentPaneProps> = ({ children, ...rest }) => {
     <Box
       sx={{
         flex: 1,
-        backgroundColor: "white",
+        backgroundColor: theme.palette.background.paper,
       }}
       {...rest}
     >
